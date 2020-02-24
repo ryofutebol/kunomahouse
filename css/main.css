@@ -1,0 +1,672 @@
+body {
+  background-color: #cac3c3;
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Serif JP', serif;
+  color: #272323;
+}
+
+.wrap {
+  overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+button {
+  font-family: 'Noto Serif JP', serif;
+  letter-spacing: 2px;
+}
+
+.heading {
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 36px;
+  margin: 80px auto 30px;
+}
+
+.btn {
+  border: none;
+}
+
+header {
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  background-color: #3a2607;
+  display: flex;
+  z-index: 2;
+}
+
+header .logo {
+  margin-left: 10%;
+  width: 100%;
+  line-height: 80px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+header nav {
+  margin-left: auto;
+}
+
+header nav ul {
+  line-height: 50px;
+  list-style: none;
+}
+
+header nav ul .menu-item {
+  display: inline-block;
+  margin-right: 40px;
+  position: relative;
+}
+
+header nav ul .menu-item:after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #fff;
+  transition: all 0.3s ease 0s;
+}
+
+header nav ul .menu-item:hover:after {
+  width: 100%;
+}
+
+header .drawer {
+  display: none;
+}
+
+.top-wrapper {
+  background: url(../images/kumano-temple.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 800px;
+  position: relative;
+}
+
+.top-wrapper .content {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  color: #ffffff;
+  text-shadow: 3px 3px 3px #000;
+}
+
+.top-wrapper .content h1 {
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+}
+
+.top-wrapper .content p {
+  font-size: 20px;
+}
+
+.info .info-container {
+  margin: 80px auto 120px;
+  padding: 50px;
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-gap: 50px;
+  background-color: #f5f4f3;
+  box-shadow: 0 5px 20px #312e2e;
+}
+
+.info img {
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.info .comment h3 {
+  margin-bottom: 30px;
+  font-size: 34px;
+}
+
+.info .comment h4 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.info .comment .btn {
+  margin-top: 47px;
+  width: 300px;
+  max-width: 100%;
+  height: 60px;
+  background-color: #636060;
+  color: #ffffff;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.info .comment .btn:hover {
+  opacity: 0.7;
+}
+
+.room-slide {
+  margin: 0 auto 100px;
+  width: 90%;
+  height: 500px;
+}
+
+.room-slide .swiper-container {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: visible;
+}
+
+.room-slide .swiper-container .swiper-pagination {
+  bottom: -45px;
+}
+
+.room-slide .swiper-container .swiper-pagination .swiper-pagination-bullet {
+  background: #636060;
+  width: 14px;
+  height: 14px;
+  margin: 0 10px;
+  position: relative;
+}
+
+.room-slide .swiper-container .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #636060;
+  border-radius: 50%;
+}
+
+.room-slide .swiper-container .swiper-slide {
+  text-align: center;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.price-container {
+  margin: 0 auto 80px;
+  padding: 50px;
+  width: 60%;
+  background-color: #f5f4f3;
+  box-shadow: 0 5px 20px #312e2e;
+  text-align: center;
+}
+
+.price-container h2 {
+  margin-bottom: 50px;
+  font-size: 2rem;
+  position: relative;
+  display: inline-block;
+}
+
+.price-container h2:before {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  display: inline-block;
+  width: 60px;
+  height: 4px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #272323;
+  border-radius: 2px;
+}
+
+.price-container .price {
+  margin-bottom: 50px;
+  font-size: 1.3rem;
+}
+
+.price-container .btn {
+  width: 300px;
+  max-width: 100%;
+  height: 60px;
+  background-color: #636060;
+  color: #ffffff;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.price-container .btn:hover {
+  opacity: 0.7;
+}
+
+.aboutroom {
+  margin: 0 auto 80px;
+  padding: 50px;
+  width: 60%;
+  background-color: #f5f4f3;
+  box-shadow: 0 5px 20px #312e2e;
+}
+
+.aboutroom h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 30px;
+  position: relative;
+}
+
+.aboutroom h2:before {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  display: inline-block;
+  width: 60px;
+  height: 4px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #272323;
+  border-radius: 2px;
+}
+
+.aboutroom .check {
+  font-size: 20px;
+}
+
+.aboutroom .check h4 {
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+
+.aboutroom p {
+  font-size: 18px;
+}
+
+.container {
+  width: 67%;
+  margin: 0 auto 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container h3 {
+  text-align: center;
+  margin-bottom: 35px;
+  font-size: 24px;
+  position: relative;
+}
+
+.container h3:before {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  display: inline-block;
+  width: 60px;
+  height: 4px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #272323;
+  border-radius: 2px;
+}
+
+.container p {
+  font-size: 18px;
+}
+
+.container .items {
+  width: 35%;
+  padding: 50px;
+  background-color: #f5f4f3;
+  box-shadow: 0 5px 20px #312e2e;
+}
+
+.container .amenities {
+  width: 35%;
+  padding: 50px;
+  background-color: #f5f4f3;
+  box-shadow: 0 5px 20px #312e2e;
+}
+
+.map {
+  margin: 80px auto 120px;
+}
+
+.access-container {
+  margin: 0 auto 130px;
+  padding: 50px;
+  width: 60%;
+  background-color: #f5f4f3;
+  box-shadow: 0 5px 20px #312e2e;
+}
+
+.access-container h3 {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.access-container h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.access-container i {
+  margin-right: 15px;
+  font-size: 20px;
+  color: #6b4f4f;
+}
+
+.access-container .address {
+  margin-bottom: 30px;
+}
+
+.access-container .transportation {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 80px;
+}
+
+.contact-container {
+  margin: 60px auto 80px;
+  padding: 50px;
+  width: 60%;
+  background-color: #f5f4f3;
+  box-shadow: 0 5px 20px #312e2e;
+}
+
+.contact-container h3 {
+  text-align: center;
+  margin-bottom: 65px;
+  font-size: 24px;
+  position: relative;
+}
+
+.contact-container h3:before {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  display: inline-block;
+  width: 60px;
+  height: 4px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #272323;
+  border-radius: 2px;
+}
+
+.foreigners {
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.foreigners .fa-exclamation-circle {
+  font-size: 22px;
+}
+
+.foreigners a {
+  font-size: 24px;
+  color: #f81818;
+}
+
+.foreigners a:hover {
+  border-bottom: 3px solid #f81818;
+}
+
+.contact-item {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.contact-item .contact-label {
+  flex: 0 1 380px;
+  position: relative;
+  font-size: 20px;
+}
+
+.contact-item .contact-input, .contact-item .contact-select, .contact-item .contact-message {
+  flex: 0 1 100%;
+}
+
+.contact-item .contact-input input, .contact-item .contact-select input, .contact-item .contact-message input {
+  width: 100%;
+  height: 24px;
+  border: 1px solid #3E3E3E;
+  background: #ffffffed;
+}
+
+.contact-item .contact-input select, .contact-item .contact-select select, .contact-item .contact-message select {
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  border: 1px solid #3E3E3E;
+  height: 24px;
+  width: 100%;
+  background: #ffffffed;
+  border-radius: 0;
+  padding: 0 90px 0 10px;
+}
+
+.contact-item .contact-input textarea, .contact-item .contact-select textarea, .contact-item .contact-message textarea {
+  width: 100%;
+  border: 1px solid #3E3E3E;
+  background: #ffffffed;
+}
+
+.contact-item .contact-select {
+  position: relative;
+}
+
+.contact-item .contact-select:after {
+  content: '';
+  display: block;
+  height: 6px;
+  width: 6px;
+  border-right: solid 2px #3e3e3e;
+  border-bottom: solid 2px #3e3e3e;
+  position: absolute;
+  right: 20px;
+  top: 8px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.btn {
+  display: block;
+  margin: auto;
+  margin-top: 47px;
+  width: 300px;
+  max-width: 100%;
+  height: 60px;
+  background-color: #636060;
+  color: #ffffff;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+footer {
+  width: 100%;
+  background-color: #3a2607;
+  color: #ffffff;
+}
+
+footer .footer-container {
+  padding: 100px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+footer .footer-container .logo {
+  margin-bottom: 30px;
+  width: 100%;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+footer .footer-container .about {
+  font-size: 20px;
+}
+
+footer .footer-container .about h4 {
+  margin-bottom: 10px;
+}
+
+footer hr {
+  margin: 0;
+  border-color: #968f8f;
+}
+
+footer .copy {
+  padding: 30px;
+  text-align: center;
+  background-color: #3a2607;
+}
+
+footer .copy p {
+  opacity: .6;
+}
+
+@media screen and (max-width: 768px) {
+  header .logo {
+    font-size: 36px;
+  }
+  header .menu-list {
+    display: none;
+  }
+  header .drawer {
+    display: block;
+  }
+  header .drawer button {
+    margin-top: 10px;
+    margin-right: 20px;
+  }
+  header .drawer .drawer-hamburger-icon,
+  header .drawer .drawer-hamburger-icon:after,
+  header .drawer .drawer-hamburger-icon:before {
+    background-color: #fff;
+    height: 3px;
+    width: 100%;
+  }
+  header .drawer .drawer-nav {
+    background-color: #cac3c3;
+  }
+  header .drawer .drawer-nav li {
+    position: relative;
+    border-bottom: 1px solid #272323;
+  }
+  header .drawer .drawer-nav li i {
+    position: absolute;
+    right: 35px;
+    top: 38%;
+    font-size: 20px;
+  }
+  header .drawer-open .drawer-hamburger-icon {
+    background-color: transparent;
+  }
+  .top-wrapper .content {
+    left: 10%;
+  }
+  .info .info-container {
+    width: 65%;
+  }
+  .container {
+    flex-wrap: wrap;
+    width: 73%;
+  }
+  .container .items {
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  .container .amenities {
+    width: 100%;
+  }
+  .contact-item {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .info-container {
+    width: 97%;
+    padding: 50px 20px;
+  }
+  .room-slide {
+    width: 100%;
+  }
+  .room-slide .swiper-container .swiper-pagination {
+    bottom: 0;
+  }
+  .room-slide .swiper-container .swiper-pagination .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+  }
+  .room-slide .swiper-container .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active:after {
+    width: 14px;
+    height: 14px;
+  }
+  .container {
+    width: 97%;
+  }
+  .container .items {
+    padding: 50px 20px;
+  }
+  .container .amenities {
+    padding: 50px 20px;
+  }
+  .price-container, .aboutroom {
+    width: 85%;
+    padding: 50px 20px;
+  }
+  .check h4 {
+    font-size: 15px;
+  }
+  .access-container {
+    width: 85%;
+    padding: 50px 20px;
+  }
+  .access-container h3 {
+    font-size: 18px;
+  }
+  .access-container .transportation {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 40px;
+  }
+  .reserve .contact-container {
+    width: 85%;
+    padding: 50px 20px;
+  }
+  footer .footer-container {
+    padding: 50px;
+  }
+  footer .footer-container .logo {
+    font-size: 36px;
+  }
+}

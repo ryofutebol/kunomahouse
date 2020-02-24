@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>くまのハウス</title>
+
+
+    <!-- swiper -->
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/motion.min.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Kosugi+Maru|Noto+Serif+JP" rel="stylesheet">
+    <!-- drawer css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
+    <!-- jquery & iScroll -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+    <!-- drawer js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="wrap">
+
+    <!-- TOP -->
+    <header>
+        <a href=""><div class="logo">くまのハウス</div></a>
+        
+        <nav class="nav-menu">
+            <ul class="menu-list">
+                <li class="menu-item"><a href="#">トップ</a></li>
+                <li class="menu-item"><a href="#room">お部屋</a></li>
+                <li class="menu-item"><a href="#access">アクセス</a></li>
+                <li class="menu-item"><a href="#reserve">ご予約</a></li>
+            </ul>
+        </nav>
+
+        <div class="drawer drawer--right">
+            <!-- ハンバーガーボタン -->
+            <button type="button" class="drawer-toggle drawer-hamburger">
+                <span class="sr-only">toggle navigation</span>
+                <span class="drawer-hamburger-icon"></span>
+            </button>
+            <!-- ナビゲーションの中身 -->
+            <nav class="drawer-nav" role="navigation">
+                <ul class="drawer-menu">
+                <li><a class="drawer-menu-item" href="#">トップ<i class="fas fa-angle-right"></i></a></li>
+                <li><a class="drawer-menu-item" href="#room">お部屋<i class="fas fa-angle-right"></i></a></li>
+                <li><a class="drawer-menu-item" href="#access">アクセス<i class="fas fa-angle-right"></i></a></li>
+                <li><a class="drawer-menu-item" href="#reserve">ご予約<i class="fas fa-angle-right"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="top-wrapper">
+        <div class="content">
+            <h1>京都で暮らす旅。</h1>
+            <p>繁華街の混雑から逃れて京都の街を暮らすように楽しんで下さい。</p>        
+        </div>
+           </div>
+
+    <div class="info">
+        <div class="bg">
+                <div class="info-container">
+                    <img src="images/kumanohouse.jpg" alt="" class="kanban">
+                    <div class="comment">
+                        <h3>くまのハウス</h3>
+                        <h4>熊野神社前ビル2FにOPEN!!</h4>
+                        <p>部屋の窓からは熊野神社の幻想的な風景をお楽しみいただけます。</p>
+                        <a href="#reserve"><button class="btn">予約する</button></a>
+                    </div>
+                </div>
+        </div>
+        
+        
+    </div>
+    <!-- TOP end -->
+
+    <!-- ROOM -->
+    <div class="room" id="room">
+        <h2 class="heading">〜 お部屋 〜</h2>
+
+        <!-- swiper -->
+        <div class="room-slide">
+                <div class="swiper-container gallery-top">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide swiper-zoom-container" ><img src="images/livingroom4.jpg" alt=""></div>
+                        <div class="swiper-slide swiper-zoom-container" ><img src="images/livingroom3.jpg" alt=""></div>
+                        <div class="swiper-slide swiper-zoom-container" ><img src="images/livingroom2.jpg" alt=""></div>
+                        <div class="swiper-slide swiper-zoom-container" ><img src="images/living.jpg" alt=""></div>
+                        <div class="swiper-slide swiper-zoom-container" ><img src="images/kitchin.jpg" alt=""></div>
+                        <div class="swiper-slide swiper-zoom-container" ><img src="images/bedroom.jpg" alt=""></div>
+                        <div class="swiper-slide swiper-zoom-container" ><img src="images/bedroom2.jpg" alt=""></div>
+                        <div class="swiper-slide swiper-zoom-container" ><img src="images/bathroom.jpg" alt=""></div>
+                        <div class="swiper-slide swiper-zoom-container" ><img src="images/bathroom2.jpg" alt=""></div>
+                        <div class="swiper-slide swiper-zoom-container" ><img src="images/bathroom3.jpg" alt=""></div>
+                        <div class="swiper-slide swiper-zoom-container" ><img src="images/bathroom4.jpg" alt=""></div>
+                        <div class="swiper-slide swiper-zoom-container" ><img src="images/mirror.jpg" alt=""></div>
+                        <div class="swiper-slide swiper-zoom-container" ><img src="images/toilet.jpg" alt=""></div>
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next swiper-button-white"></div>
+                    <div class="swiper-button-prev swiper-button-white"></div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+        </div>
+        <!-- swiper end -->
+
+        <div class="price-container">
+            <h2>ご利用料金</h2>
+            <div class="price">
+                <h3>１泊１室　25000円</h3>
+                <h4>（5名様までご利用可）</h4>
+            </div>
+            <a href="#reserve"><button class="btn">予約する</button></a>
+        </div>
+        <div class="aboutroom">
+            <h2>お部屋について</h2>
+            <div class="check">
+                <h4>〈チェックイン・チェックアウト〉</h4>
+                <p>チェックイン：15:00〜</p>
+                <p><i class="fas fa-exclamation-circle"></i>チェックイン1時間前にご連絡下さいませ。</p>
+                <p>チェックアウト：10:00</p>
+            </div>
+            <br>
+            <p>室内は全て禁煙とさせていただきます。</p>
+            <p>ペットの同伴はお断りしております。</p>
+            <br>
+            <p>お客様の不注意による事故や怪我及び持ち物等の盗難や紛失については責任を負いませんので十分御注意頂きます様お願いします。</p>
+            <br>
+            <p>当施設は3F住居となっております。</p>
+            <p>御迷惑のないようよろしくお願いします。</p>
+            <br>
+            <p>滞在中のお部屋の掃除及びリネン、タオルの交換はありません。(3泊以上であれば交換します)</p>
+            <p>お困りの事があれば連絡して下さい。</p>
+        </div>
+
+        <div class="container">
+            <div class="items">
+                <h3>設備・備品</h3>
+                <p>Wi-Fi、エアコン、空気清浄機、ローテーブル、テレビ、全自動洗濯乾燥機、冷蔵庫、電子レンジ、簡易キッチン(IHコンロ、電気湯沸かしポット、調理器具、食器、食器洗剤、スポンジ)、バスタオル、フェイスタオル、ハンドタオル、掃除機</p>
+            </div>
+            <div class="amenities">
+                <h3>アメニティ</h3>
+                <p>シャンプー、コンディショナー、ボディーソープ、ハンドソープ、ドライヤー、基礎化粧品、歯ブラシセット、洗濯用洗剤、日本茶、コーヒー、紅茶、ミネラルウォーター</p>
+                <br>
+                <p>※寝間着、パジャマ類のご用意はしておりませんのでお客様自身でご持参下さい</p>
+            </div>
+        </div> 
+
+    </div>
+
+    <!-- Access -->
+    <div class="access" id="access">
+        <h2 class="heading">〜 アクセス 〜</h2>
+
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26603.45127002455!2d135.7601573759589!3d35.0180076744284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600108f1afb4ebb1%3A0xc8f8463bf2fd5d39!2z44CSNjA2LTgzOTIg5Lqs6YO95bqc5Lqs6YO95biC5bem5Lqs5Yy66IGW6K236Zmi5bGx546L55S677yU77yT!5e0!3m2!1sja!2sjp!4v1555335083010!5m2!1sja!2sjp" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>        </div>
+        <div class="access-container">
+            <div class="address">
+                <h3>住所</h3>
+                <p>〒606-8392</p>
+                <p>京都市左京区聖護院山王町43-14 キディ銀座ビル2F</p>
+            </div>
+            <div class="root">
+                <h3>交通案内（JR京都駅より）</h3>
+                <div class="transportation">
+                    <div class="bus">
+                        <h4><i class="fas fa-bus-alt"></i>バス利用</h4>
+                        <p>京都駅中央口 D2バス乗り場 市バス206系統(清水寺・祇園経由)で約25分(片道220円)  熊野神社前 下車</p>
+                    </div>
+                    <div class="taxi">
+                        <h4><i class="fas fa-taxi"></i>タクシー利用</h4>
+                        <p> 約20分 (1600〜1800円) 「熊野神社前」とお伝えください。</p>
+                    </div>
+                    <div class="train">
+                        <h4><i class="fas fa-subway"></i>京阪電車利用</h4>
+                        <p>神宮丸太町駅 5番出口より東に徒歩10分</p>
+                    </div>
+                    <div class="car">
+                        <h4><i class="fas fa-car"></i>車でお越しの場合</h4>
+                        <p>当宿には専用駐車場はございません。お手数ですが、近隣のコインパーキングをご利用下さい。</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Access end -->
+
+    <!-- Reserve -->
+    <div class="reserve" id="reserve">
+        <h2 class="heading">〜 ご予約 〜</h2>
+
+        <div class="contact-container">
+            <h3>お問い合わせ</h3>
+
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLSc45eIIXlwQkSm_jiKS6sJ4eHzUs0WPkYz5leYkV-8_C_iwcg/formResponse">
+                <div class="name contact-item">
+                    <label class="contact-label">氏名</label>
+                    <div class="contact-input">
+                        <input name="entry.2053494650" type="text"  placeholder=" 氏名">
+                    </div>
+                </div>
+                <div class="name-kana contact-item">
+                    <label class="contact-label">フリガナ</label>
+                    <div class="contact-input">
+                        <input name="entry.693437036" type="text"  placeholder=" フリガナ">
+                    </div>
+                </div>
+                <div class="email contact-item">
+                    <label class="contact-label">メールアドレス</label>
+                    <div class="contact-input">
+                        <input name="entry.588064036" type="text"  placeholder=" sample@gmail.com">
+                    </div>
+                </div>
+                <div class="phone contact-item">
+                    <label class="contact-label">電話番号</label>
+                    <div class="contact-input">
+                        <input name="entry.1154656733" type="text"  placeholder=" ×××-××××-××××">
+                    </div>
+                </div>
+                <div class="date contact-item">
+                    <label class="contact-label">チェックイン希望日</label>
+                    <div class="contact-input">
+                        <input name="entry.1562315575" type="date" class="checkin">
+                    </div>
+                </div>
+                <div class="date contact-item">
+                    <label class="contact-label">チェックアウト希望日</label>
+                    <div class="contact-input">
+                        <input name="entry.661737482" type="date" class="checkout">
+                    </div>
+                </div>
+                <div class="people contact-item">
+                    <label class="contact-label">人数</label>
+                    <div class="contact-input">
+                        <input name="entry.287110635" type="text"  placeholder=" 人数">
+                    </div>
+                </div>
+                <div class="message contact-item">
+                    <label class="contact-label">コメント</label>
+                    <div class="contact-message">
+                        <textarea name="entry.75551398" id="" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+
+                <button class="btn">送信</button>
+
+
+            </form>
+        </div>
+
+    </div>
+    <!-- Reserve end -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <a href="#"><div class="logo">くまのハウス</div></a>
+            <div class="about">
+                <h4>くまのハウス</h4>
+                <p>〒606-8392</p>
+                <p>京都市左京区聖護院山王町43-14 キディ銀座ビル2F</p>
+            </div>
+        </div>
+        <hr>
+        <div class="copy">
+            <p>&copy; 2019 Kuma no house All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Fotter end -->
+
+</div>
+    <!-- swiper -->
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.0.3/scrollreveal.min.js"></script>
+
+
+</body>
+</html>
